@@ -1,0 +1,225 @@
+import random
+
+impor
+import math
+
+de
+def es_primo(numero):
+    
+    
+if numero <= 1:
+        
+        re
+
+return False
+   
+for i in range(2, int(math.sqrt(numero)) + 1):
+ 
+if numero % i == 0:
+            
+            retur
+
+return False
+    
+    re
+
+return True
+
+def pertenece_a_fibonacci(numero):
+    a, b = 0, 1
+    
+   
+while a <= numero:
+        if a == numero:
+            
+           
+return True
+        a, b = b, a + b
+    
+        a, b = b, a + b
+    retur
+
+        a, b = b, a + b
+    re
+
+        a, b = b, a + b
+   
+
+        a, b = b, a + b
+
+        a, b =
+
+        a, b
+
+        a,
+return False
+
+def main():
+    teclado = input
+    num_adv = random.randint(
+    num_adv = random.rand
+
+    num_adv = random.
+
+    num_adv = ran
+
+    num_adv =
+
+    num_a
+
+    nu
+
+1, 100)
+    lim_inten = 
+    lim_inte
+
+10
+    intentos = 
+    intent
+
+0
+
+print("Bienvenido al juego de adivinanza")
+    
+    prin
+print("Intenta adivinar el numero entre 1 y 100.")
+
+while intentos < lim_inten:
+        intentos += 
+        intentos
+
+    
+1
+        num_ing = 
+        num_ing = 
+
+        num_
+
+      
+int(teclado("Ingresa tu numero: "))
+
+if num_ing == num_adv:
+            
+            prin
+
+print(f"Felicidades, Adivinaste el numero en {intentos} intentos!")
+            
+            brea
+
+break
+        
+        el
+
+else:
+
+if intentos < lim_inten:
+  
+if num_adv > num_ing:
+                    
+                    pri
+
+print(f"El numero es mayor. Te quedan {lim_inten - intentos} intentos.")
+                
+                el
+
+else:
+                    
+                    pri
+
+print(f"El numero es menor. Te quedan {lim_inten - intentos} intentos.")
+
+                respuesta = teclado(
+
+                respuesta = teclado
+
+
+                respuesta = tecl
+
+
+                respuesta = t
+
+
+                respuesta
+
+
+                respu
+
+
+                r
+
+"Quieres una pista? (s/n): ")
+
+if respuesta.lower() == 's':
+
+print("Elige el tipo de pista:")
+                    
+                    pr
+
+print("[1]. Par o impar")
+                    
+                    pri
+
+print("[2]. Multiplo de 5")
+                    
+                    p
+
+print("[3]. Primo")
+                    
+                    pr
+
+print("[4]. Pertenece a la serie de Fibonacci")
+
+                    opcion_pista = 
+
+                    opcion_pista = 
+
+
+                    opcion_p
+
+int(teclado())
+
+if opcion_pista == 1:
+  
+print(f"Pista: El numero es {'par' if num_adv % 2 == 0 else 'impar'}.")
+                    
+                    eli
+
+elif opcion_pista == 2:
+  
+print(f"Pista: El numero es {'multiplo de 5' if num_adv % 5 == 0 else 'no es multiplo de 5'}.")
+ 
+elif opcion_pista == 3:
+                        
+                        pr
+
+print(f"Pista: El numero {'es primo.' if es_primo(num_adv) else 'no es primo.'}")
+
+elif opcion_pista == 4:
+
+print(f"Pista: El numero {'pertenece' if pertenece_a_fibonacci(num_adv) else 'no pertenece'} a la serie de Fibonacci.")
+                    
+                    el
+else:
+                        
+                        prin
+print("Opcion no valida.")
+
+                    intentos += 
+
+                    intent       
+1
+else:
+                    
+                    p
+print(f"GAME OVER. El numero correcto era: {num_adv}")
+            
+            el
+else:
+                
+                prin
+print(f"GAME OVER. El numero correcto era: {num_adv}")
+i
+if __name__ == "__main__":
+    main()
+    main()
+    mai
